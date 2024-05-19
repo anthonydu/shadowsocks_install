@@ -227,7 +227,7 @@ pre_install(){
         yum install -y python python-devel python-setuptools openssl openssl-devel curl wget unzip gcc automake autoconf make libtool
     elif check_sys packageManager apt; then
         apt-get -y update
-        apt-get -y install python python-dev python-setuptools openssl libssl-dev curl wget unzip gcc automake autoconf make libtool
+        apt-get -y install python3 python3-dev python3-setuptools openssl libssl-dev curl wget unzip gcc automake autoconf make libtool
     fi
     cd ${cur_dir}
 }
